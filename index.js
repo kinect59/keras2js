@@ -1,5 +1,5 @@
 async function loadModel(){ 
-              model = await tf.loadModel('https://hkinsley.com/static/tfjsmodel/model.json')
+              model = await tf.loadModel('./XOR/web_model/model.json')
 
   
               y = model.predict(tf.zeros([1,2])) 
